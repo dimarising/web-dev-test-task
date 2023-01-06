@@ -1,0 +1,73 @@
+{
+    "products": [
+        {
+            "_id": "wMachine1",
+            "title": "WW90T754ABT, Pralka QuickDrive™, 9kg, biała ",
+            "image": "/images/wMachine1.jpg",
+            "capacity": 9,
+            "dimensions": "55 x 60 x 85 cm",
+            "features": "Drzwi AddWash™, Panel AI Control, Silnik inwertowy, Wyświetlacz elektroniczny",
+            "energyClass": "/icons/A.png",
+            "priceIsValid": "15.09.2022 - 21.09.2022",
+            "price": 3199,
+            "installments":"53,31 zł x 60 rat"
+        },
+        {
+            "_id": "wMachine2",
+            "title": "WW90T754ABT, Pralka QuickDrive™, 9kg, biała ",
+            "image": "/images/wMachine2.JPG",
+            "capacity": 8,
+            "dimensions": "55 x 60 x 85 cm",
+            "features": "Drzwi AddWash™, Panel AI Control, Silnik inwertowy, Wyświetlacz elektroniczny",
+            "energyClass": "/icons/B.png",
+            "priceIsValid": "15.09.2022 - 21.09.2022",
+            "price": 3199,
+            "installments":"53,31 zł x 60 rat"
+        },
+        {
+            "_id": "wMachine3",
+            "title": "WW90T754ABT, Pralka QuickDrive™, 9kg, biała ",
+            "image": "/images/wMachine3.jpg",
+            "capacity": 10.5,
+            "dimensions": "55 x 60 x 85 cm",
+            "features": "Drzwi AddWash™, Panel AI Control, Silnik inwertowy, Wyświetlacz elektroniczny",
+            "energyClass": "/icons/C.png",
+            "priceIsValid": "15.09.2022 - 21.09.2022",
+            "price": 3199,
+            "installments":"53,31 zł x 60 rat"
+        },
+        {
+            "_id": "wMachine4",
+            "title": "WW90T754ABT, Pralka QuickDrive™, 9kg, biała ",
+            "image": "/images/wMachine1.jpg",
+            "capacity": 9,
+            "dimensions": "55 x 60 x 85 cm",
+            "features": "Drzwi AddWash™, Panel AI Control, Silnik inwertowy, Wyświetlacz elektroniczny",
+            "energyClass": "/icons/D.png",
+            "priceIsValid": "15.09.2022 - 21.09.2022",
+            "price": 3199
+        },
+        {
+            "_id": "wMachine5",
+            "title": "WW90T754ABT, Pralka QuickDrive™, 9kg, biała ",
+            "image": "/images/wMachine2.JPG",
+            "capacity": 10.5,
+            "dimensions": "55 x 60 x 85 cm",
+            "features": "Drzwi AddWash™, Panel AI Control, Silnik inwertowy, Wyświetlacz elektroniczny",
+            "energyClass": "/icons/E.png",
+            "priceIsValid": "15.09.2022 - 21.09.2022",
+            "price": 3199
+        },
+        {
+            "_id": "wMachine6",
+            "title": "WW90T754ABT, Pralka QuickDrive™, 9kg, biała ",
+            "image": "/images/wMachine3.jpg",
+            "capacity": 8,
+            "dimensions": "55 x 60 x 85 cm",
+            "features": "Drzwi AddWash™, Panel AI Control, Silnik inwertowy, Wyświetlacz elektroniczny",
+            "energyClass": "/icons/F.png",
+            "priceIsValid": "15.09.2022 - 21.09.2022",
+            "price": 3199
+        }
+    ]
+}
