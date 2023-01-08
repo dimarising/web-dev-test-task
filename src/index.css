@@ -94,24 +94,27 @@ footer {
   height: 100%;
   background-color: #ffffff;
   border-radius: 20px;
+  max-width: min-content;
 }
 
 .product img{
   display: block;
+  padding-top: 15px;
   margin: auto;
-  max-width: 40rem;
-  max-height: 40rem;
+  max-width: 35rem;
+  max-height: 35rem;
 }
 
 .cartText{
   padding: 15px;
+  word-break: break-all;
 }
 
 .energyClass{
   display: contents;
   margin: auto;
   width: 50px;
-  height: 25px;
+  /* height: 25px; */
 }
 .energyClass p{
   display: inline-block;
@@ -119,16 +122,11 @@ footer {
 .energyClass img{
   display: inline-block;
   margin-left: 10px;
-  
-}
-
-
-.price{
-
+  padding: 0;
 }
 
 .buttonСhoose{
-  margin: 10px auto;
+  margin: 20px auto;
   border: none;
   color: #fff;
   font-size: 1.5rem;
@@ -136,11 +134,104 @@ footer {
   outline: none;
   cursor: pointer;
   width: 180px;
-  height: 40px;
+  height: 35px;
   border-radius: 25px;
   background-color: #1428a0;
 }
 .buttonСhoose:hover {
   color: #ffffff;
   background-color: #1c1c1c;
+}
+
+/* Filter */
+
+.filter{
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+select {
+  display:flex;
+  position:relative;
+  width:250px;
+  height:40px;
+  border-radius: 0%;
+  border: none;
+  font-size: revert;
+}
+ option {
+  padding:0 30px 0 10px;
+  min-height:40px;
+  display:flex;
+  align-items:center;
+  background:#ffffff;
+  position:absolute;
+  top:0;
+  width: 100%;
+  pointer-events:none;
+  box-sizing:border-box;
+  overflow:hidden;
+  white-space:nowrap;
+  font-size: 1.5rem;
+}
+input{
+  width: 250px;
+  height: 30px;
+  border-radius: 0%;
+  border: none;
+}
+
+/* Text */
+
+.cartText p{
+  font-size: large;
+  font-weight: 600;
+  padding-right: 120px;
+}
+.energyClass p{
+  padding-right: 5px;
+  font-size: larger;
+  font-weight: normal;
+  color: #9b9b9b;
+}
+
+.searchPannel{
+  margin-top: 10px;
+}
+.filter-block{
+  margin-top: 10px;
+}
+.bloodText{
+  font-size: larger;
+  font-weight: normal;
+}
+.specifications{
+  padding-right: 85px;
+  color: #9b9b9b;
+}
+.specifications b{
+  color: #000000;
+}
+.priceIsValid{
+  font-size: larger;
+  font-weight: normal;
+  color: #9b9b9b;
+}
+.price{
+  font-size: xx-large;
+  font-weight: 600;
+}
+.installments{
+  font-size: larger;
+  font-weight: 700;
+  color: #9b9b9b;
+}
+.filtr-text{
+  font-size: larger;
+  font-weight: 700;
+}
+.filter-result{
+  margin-top: 5px;
+  font-size: small;
 }
