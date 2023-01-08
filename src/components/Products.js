@@ -19,9 +19,9 @@ export default class Products extends Component {
                                                 {product.title}
                                             </p>
                                             <div className="specifications">
-                                                <div className="capacity">Pojemność (kg): {product.capacity}</div>
-                                                <div className="dimensions">Wymiary(GxSxW): {product.dimensions}</div>
-                                                <div className="features">Funkcje: {product.features}</div>
+                                                <div className="capacity">Pojemność (kg): <b>{product.capacity}</b></div>
+                                                <div className="dimensions">Wymiary(GxSxW): <b>{product.dimensions} </b></div>
+                                                <div className="features">Funkcje: <b>{product.features}</b></div>
                                                 
                                                 <div className="energyClass">
                                                     <p>Klasa energetyczna </p>
