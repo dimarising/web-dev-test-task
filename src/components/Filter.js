@@ -35,19 +35,19 @@ export default class Filter extends Component {
                     </div>
                     <div className="col"> 
                             <div className="filter-functions">
-                                <select  onChange={this.props.filterProducts}>
+                                <select value={this.props.functions} onChange={this.props.filterProducts}>
                                     <option selected disabled hidden>Pokaż wszystkie</option>
                                     <option value="all">Wszystkie</option>
-                                    <option value="door AddWash">Drzwi AddWash</option>
+                                    <option value="Drzwi AddWash">Drzwi AddWash</option>
                                     <option value="Panel AI Control">Panel AI Control</option>
-                                    <option value="Invert motor">Silnik inwertowy</option>
-                                    <option value="Electronic display">Wyświetlacz elektroniczny</option>
+                                    <option value="Silnik inwertowy">Silnik inwertowy</option>
+                                    <option value="Wyświetlacz elektroniczny">Wyświetlacz elektroniczny</option>
                                 </select>
                             </div>
                     </div>
                     <div className="col"> 
                             <div className="filter-enClass">
-                                <select onChange={this.props.filterProducts}>
+                                <select value={this.props.enClass}  onChange={this.props.enClassProducts}>
                                     <option selected disabled hidden>Pokaż wszystkie</option>
                                     <option value="all">Wszystkie</option>
                                     <option value="A">A</option>
@@ -59,7 +59,7 @@ export default class Filter extends Component {
                     </div>
                     <div className="col"> 
                             <div className="filter-capacity">
-                                <select onChange={this.props.filterProducts}>
+                                <select value={this.props.capacity} onChange={this.props.capacityProducts}>
                                     <option selected disabled hidden>Pokaż wszystkie</option>
                                     <option value="all">Wszystkie</option>
                                     <option value="9kg">9kg</option>
@@ -74,7 +74,7 @@ export default class Filter extends Component {
                         </div>
                     </div>
                 
-                </div>
+                </div> 
             </div>
         </div>
     )
