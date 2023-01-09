@@ -23,9 +23,9 @@ export default class Products extends Component {
                                                 <div className="dimensions">Wymiary(GxSxW): <b>{product.dimensions} </b></div>
                                                 <div className="features">Funkcje: <b>{product.features}</b></div>
                                                 
-                                                <div className="energyClass">
+                                                <div className="energyClass_img">
                                                     <p>Klasa energetyczna </p>
-                                                    <img className="energyClass" src={product.energyClass} alt={product.energyClass}></img>
+                                                    <img className="energyClass_img" src={product.energyClass_img} alt={product.energyClass}></img>
                                                 </div>
 
                                             </div>

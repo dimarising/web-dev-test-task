@@ -3,6 +3,7 @@ import data from "./data.json";
 import Products from "./components/Products";
 import Filter from "./components/Filter";
 import SearchBar from "./components/SearchBar";
+import {useState} from 'react'
 
 class App extends React.Component {
 
@@ -13,14 +14,14 @@ class App extends React.Component {
       sort:"",
       functions:"",
       enClass:"",
-      capacity:""
-    };
+      capacity:"",
+      search: ""
+    }
   }
 
   sortProducts = (event) => {
 
     const sort= event.target.value;
-    console.log(event.target.value);
     this.setState((state) => ({
       sort: sort,
       products: this.state.products.slice().sort((a, b) =>
@@ -34,25 +35,53 @@ class App extends React.Component {
   };
 
   filterProducts = (event) => {
-
-    console.log(event.target.value);
-    if(event.target.value === data.products.function){
-        console.log("yes");
-      // this.setState({function: event.target.value, product: data.products});
-    }else{
-      console.log("no");
-      // this.setState({
-      //   functions: event.target.value,
-      //   products: data.products.filter(
-      //     (product) => product.functions.indexOf(event.target.value) >= 0
-      //   ),
-      // })
+      console.log(event.target.value);
+      if(event.target.value === "all"){
+        this.setState({functions: event.target.value, product: data.products})
+      } else {
+      this.setState({
+        functions: event.target.value,
+        products: data.products.filter(
+          (product) => product.features.indexOf(event.target.value) >=0
+        ),
+      })
     }
   }
 
-  searchProducts = (event) => {
+  enClassProducts = (event) => {
     console.log(event.target.value);
+    if(event.target.value === "all"){
+        this.setState({enClass: event.target.value, product: data.products})
+      } else {
+      this.setState({
+        enClass: event.target.value,
+        products: data.products.filter( (product) => product.energyClass === event.target.value
+        ),
+      })
+    }
+  }
 
+  capacityProducts = (event) => {
+    console.log(event.target.value);
+    if(event.target.value === "all"){
+      this.setState({capacity: event.target.value, product: data.products})
+    } else {
+    this.setState({
+      capacity: event.target.value,
+      products: data.products.filter( (product) => product.capacity == event.target.value.replace(/[^0-9]/g, '')
+      ),
+    })
+  }
+}
+
+
+  searchProducts = (event) => {
+    this.setState({
+      search: event.target.value,  
+      products: data.products.filter( (product) => product.title.indexOf(event.target.value) >=0
+      ),
+    })
+    console.log("dfgdfgdfgdfgdgdfdfgdfgdfgdgfgdf");
   }
 
   render() {
@@ -62,7 +91,9 @@ class App extends React.Component {
         <main>
           <div className="content">
             <div className="main">
-              <SearchBar placeholder="Search...">
+              <SearchBar 
+             searchProducts={this.searchProducts}
+              >
               </SearchBar>
               <Filter count={this.state.products.length}
               sort={this.state.sort}
@@ -70,7 +101,11 @@ class App extends React.Component {
               enClass={this.state.enClass}
               capacity={this.state.capacity}
               filterProducts={this.filterProducts}
-              sortProducts={this.sortProducts}>
+              sortProducts={this.sortProducts}
+              enClassProducts={this.enClassProducts}
+              capacityProducts={this.capacityProducts}
+              >
+              
 
               </Filter> 
               <Products products={this.state.products}></Products>
